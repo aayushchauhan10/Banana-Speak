@@ -1,4 +1,9 @@
 var btnTranslate = document.querySelector("#btn-translate");
-btnTranslate.addEventListener("click", function clickEventHandler() {
-  console.log("Clicked!");
-});
+
+var txtInput = document.querySelector("#textarea");
+
+function clickEventHandler() {
+  txtInput.toUpperCase();
+}
+
+btnTranslate.addEventListener("click", clickEventHandler);
