@@ -6,52 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speaking Banana</title>
-    <style>
-        h1 {
-            text-align: center;
-        }
-
-        .input {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #textarea {
-            margin-bottom: 2rem;
-            display: block;
-            padding: 1rem;
-            font-size: 15px;
-            font-weight: 600;
-            line-height: 22px;
-        }
-
-        .output {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        #txt-output {
-            padding: 1rem;
-            font-size: 15px;
-            font-weight: 600;
-            line-height: 22px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Talking Banana</h1>
-    <div class="input">
-        <textarea name="textarea" id="textarea" cols="60" rows="7" placeholder="Type Something to translate"></textarea>
-        <button id="btn-translate">Translate</button>
+    <div class="heading">
+        <h1>Talk Banana</h1>
     </div>
-    <div class="output">
-        <h4>Output will come here</h4>
-        <textarea cols="60" rows="7" id="txt-output" placeholder="Output..."></textarea>
+    <div class="content">
+        <div class="input">
+            <textarea name="textarea" id="textarea" cols="40" rows="5"
+                placeholder="Type Something to translate"></textarea>
+            <button id="btn-translate">Translate</button>
+        </div>
+        <div class="output">
+            <h4>Output will come here 👇</h4>
+            <textarea cols="40" rows="5" id="txt-output" placeholder="Output..."></textarea>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Do You Know?</h3>
+        <p>
+            If you are worried about having the porblems of learning new languages, then we are here for your help.
+            You can translate your sentences to a very funny language called Banana which is very awesome and it is
+            in trending currently.
+        </p>
     </div>
     <script src="app.js" type="text/javascript"></script>
 </body>
